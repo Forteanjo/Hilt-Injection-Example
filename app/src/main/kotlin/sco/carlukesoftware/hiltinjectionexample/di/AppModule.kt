@@ -1,7 +1,6 @@
 package sco.carlukesoftware.hiltinjectionexample.di
 
 import android.content.Context
-import androidx.room.Room
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -38,12 +37,7 @@ object AppModule {
     @Provides
     @Singleton
     fun provideDatabase(@ApplicationContext context: Context): LoggingDatabase = LoggingDatabase.getDatabase(context)
-//        return Room.databaseBuilder(
-//            context.applicationContext,
-//            LoggingDatabase::class.java,
-//            "logging.db"
-//        ).build()
-//    }
+
 
     @Provides
     fun providesUseCase(loggingRepository: LoggingRepository) = LoggingUseCase(
