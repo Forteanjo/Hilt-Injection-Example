@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hilt Injection Example</string>
+
+    <string name="content_authority">sco.carlukesoftware.hiltinjectionexample.contentprovider</string>
+</resources>

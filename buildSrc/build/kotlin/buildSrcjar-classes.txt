@@ -1,0 +1,1 @@
+C:\Users\Donald\Documents\AndroidStudioProjects\HiltInjectionExample\buildSrc\build\classes\kotlin\main\ConfigValues.class;C:\Users\Donald\Documents\AndroidStudioProjects\HiltInjectionExample\buildSrc\build\classes\kotlin\main\DependencyHandlersKt.class;C:\Users\Donald\Documents\AndroidStudioProjects\HiltInjectionExample\buildSrc\build\classes\kotlin\main\UtilsKt.class

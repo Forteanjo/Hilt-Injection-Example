@@ -1,0 +1,153 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.20"
+
+core-ktx = "1.12.0"
+
+annotationJvm = "1.7.1"
+
+compose = "1.5.4"
+activity-compose = "1.8.2"
+compose-bom = "2023.10.01"
+lifecycle-runtime-ktx = "2.6.2"
+
+constraintlayout = "2.1.4"
+constraintlayout-core = "1.0.4"
+constraintlayout-compose = "1.0.1"
+
+# Dagger-Hilt
+dagger-hilt = "2.49"
+androidx-hilt = "1.1.0"
+
+# Kotlin Symbol Processor
+ksp = "1.9.20-1.0.14"
+
+# Navigation
+navigation-compose = "2.7.6"
+
+# Room
+room = "2.6.1"
+
+# Datastore
+datastore-preferences = "1.1.0-alpha07"
+
+# Splash
+splash-compose = "1.0.1"
+
+retrofit = "2.9.0"
+
+# Testing
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+
+androidx-annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version.ref = "annotationJvm" }
+
+# Lifecycle & view models
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-runtime-ktx" }
+
+# Compose UI
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Constraint layout
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+constraintlayout-core = { group = "androidx.constraintlayout", name = "constraintlayout-core", version.ref = "constraintlayout-core" }
+constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout-compose" }
+
+# Material icons
+material-icons-core = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "compose" }
+material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "compose" }
+
+# Foundation
+foundation-compose = { group = "androidx.compose.foundation", name = "foundation" }
+
+# Navigation
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
+
+# Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "dagger-hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger-hilt" }
+hilt-androidx-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "androidx-hilt" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidx-hilt" }
+
+hilt-android-test = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "dagger-hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "dagger-hilt" }
+
+# Room
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# Animation
+animation-compose = { group = "androidx.compose.animation", name = "animation" }
+
+# Datastore preferences
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore-preferences" }
+
+# Splash
+splash-compose = { group = "androidx.core", name = "core-splashscreen", version.ref = "splash-compose" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+org-jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-symbol-processing = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt"}
+
+
+[bundles]
+compose = [
+    "ui",
+    "ui-graphics",
+    "ui-tooling",
+    "ui-tooling-preview",
+    "material3"
+]
+compose-test = [
+    "ui-tooling-preview",
+    "ui-test-junit4"
+]
+lifecycle = [
+    "lifecycle-runtime-ktx",
+    "androidx-lifecycle-viewmodel-ktx"
+]
+material-icons = [
+    "material-icons-core",
+    "material-icons-extended"
+]
+hilt = [
+    "hilt-android",
+    "hilt-compiler",
+    "hilt-androidx-compiler",
+    "hilt-navigation-compose"
+]
+room = [
+    "room-runtime",
+    "room-ktx"
+]
+constraintLayout = [
+    "constraintlayout",
+    "constraintlayout-core",
+    "constraintlayout-compose"
+]
